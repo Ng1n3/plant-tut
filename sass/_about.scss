@@ -1,0 +1,40 @@
+@use 'variable' as v;
+
+.about {
+	&__container {
+		row-gap: 2rem;
+	}
+
+	&__img {
+		width: 280px;
+		justify-self: center;
+	}
+
+    &__title {
+        margin-bottom: v.$mb-1;
+    }
+
+    &__description {
+        margin-bottom: v.$mb-2;
+    }
+
+    &__details {
+        display: grid;
+        row-gap: 1rem;
+        margin-bottom: v.$mb-2-5;
+    }
+
+    &__details-description {
+        display: inline-flex;
+        column-gap: .5rem;
+        font-size: v.$small-font-size;
+    }
+
+    &__details-icon {
+        font-size: 1rem;
+        color: v.$first-color;
+        margin-top: .15rem;
+    }
+
+
+}

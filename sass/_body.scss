@@ -1,0 +1,109 @@
+@use 'variable' as v;
+
+.home {
+    padding: 3.5rem 0 2rem;
+
+    &__container {
+        position: relative;
+        row-gap: 2rem;
+    }
+
+    &__img {
+       width: 200px;
+       justify-self: center; 
+    }
+
+    &__title {
+        font-size: v.$big-font-size;
+        line-height: 140%;
+        margin-bottom: v.$mb-1;
+    }
+
+    &__description {
+        margin-bottom: v.$mb-2-5;
+
+    }
+
+    &__social {
+        position: absolute;
+        top: 2rem;
+        right: -1rem;
+        display: grid;
+        justify-items: center;
+        row-gap: 3rem;
+    }
+
+    &__social-follow {
+        font-weight: v.$font-medium;
+        font-size: v.$small-font-size;
+        color: v.$first-color;
+        position: relative;
+        transform: rotate(90deg);
+    }
+
+    &__social-follow::after {
+        content: '';
+        position: absolute;
+        width: 1rem;
+        height: 2px;
+        background-color: v.$first-color;
+        right: -45%;
+        top: 50%;
+    }
+
+    &__social-links {
+        margin-top: .7rem;
+        display: inline-flex;
+        flex-direction: column;
+        row-gap: .25rem;
+    }
+
+    &__social-link {
+        font-size: 1rem;
+        color: v.$first-color;
+        transition: .3s;
+    }
+
+    &__social-link:hover {
+        transform: translateX(.25rem);
+    }
+}
+
+/* ======== BUTTON ======== */
+.button {
+    display: inline-block;
+    background-color: v.$first-color;
+    color: #fff;
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
+    font-weight: v.$font-medium;
+    transition: ease-out .3s;
+
+    &:hover {
+        background-color: v.$first-color-alt;
+    }
+
+    &__icon {
+        transition: ease-in .3s;
+    }
+
+    &:hover &__icon {
+        transform: translateX(.25rem);
+    }
+}
+
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+
+}
+
+.button--link {
+    color: v.$first-color;
+    font-weight: v.$font-medium;
+
+    &:hover .button__icon {
+        transform: translateX(.25rem)
+    }
+}

@@ -1,0 +1,66 @@
+@use "variable" as v;
+
+.product {
+	&__description {
+		text-align: center;
+	}
+
+	&__container {
+		padding: 3rem 0;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2.5rem 3rem;
+	}
+
+	&__card {
+		display: grid;
+		position: relative;
+	}
+
+	&__img {
+		position: relative;
+		width: 120px;
+		justify-self: center;
+		margin-bottom: v.$mb-0-75;
+		transition: ease-out 0.3s;
+	}
+
+	&__title,
+	&__price {
+		font-size: v.$small-font-size;
+		font-weight: v.$font-semi-bold;
+		color: v.$title-color;
+	}
+
+	&__title {
+		margin-bottom: 0.25rem;
+	}
+
+	&__button {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background-color: v.$first-color;
+		color: #fff;
+		padding: 0.25rem;
+		border-radius: 0.35rem;
+		font-size: 1.15rem;
+
+		&hover {
+			background-color: v.$first-color-alt;
+		}
+	}
+
+	&__circle {
+		width: 90px;
+		height: 90px;
+		background-color: v.$first-color-lighten;
+		border-radius: 50%;
+		position: absolute;
+		top: 18%;
+		left: 5%;
+	}
+
+	&__card:hover &__img {
+		transform: translateY(-0.5rem) scale(1.2);
+	}
+}

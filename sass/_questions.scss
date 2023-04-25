@@ -1,0 +1,78 @@
+@use 'variable'as v;
+
+.questions {
+    background-color: v.$first-color-lighten;
+
+    &__container {
+        gap: 1.5rem;
+        padding: 1.5rem 0;
+    }
+
+    &__group {
+        display: grid;
+        row-gap: 1.5rem;
+    }
+
+    &__item {
+        background-color: v.$container-color;
+        border-radius: .25rem;
+
+        &:hover {
+            box-shadow: 0 2px 8px hsla(v.$hue, 4%, 15%, .15);
+        }
+    }
+
+    &__item-title {
+        font-size: v.$small-font-size;
+        font-weight: v.$font-medium;
+    }
+
+    &__icon {
+        font-size: 1.25rem;
+        color: v.$title-color;
+    }
+
+    &__description {
+        font-size: v.$smaller-font-size;
+        padding: 0 1.25rem 1.25rem 2.5rem;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        column-gap: .5rem;
+        padding: .75rem .5rem;
+        cursor: pointer;
+    }
+
+    &__content {
+        overflow: hidden;
+        height: 0;
+    }
+
+    &__item,
+    &__header,
+    &__item-title,
+    &__icon,
+    &__description,
+    &__content {
+        transition: ease-in-out .3s;
+    }
+
+
+}
+
+.accordion-open .questions__header,
+.accordion-open .questions__content {
+    background-color: v.$first-color;
+}
+
+.accordion-open .questions__item-title,
+.accordion-open .questions__description,
+.accordion-open .questions__icon {
+    color: v.$container-color;
+}
+
+.accordion-open .questions__icon {
+    transform: rotate(45deg);
+}

@@ -1,0 +1,98 @@
+@use 'variable' as v;
+
+.footer {
+    &__container {
+        row-gap: 3rem;
+    }
+
+    &__logo {
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+        color: v.$title-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: -1px;
+        margin-bottom: v.$mb-2-5;
+        transition: ease-in-out .3s;
+    }
+
+    &__logo-icon {
+        font-size: 1.15rem;
+        color: v.$first-color;
+    }
+
+    &__logo:hover {
+        color: v.$first-color;
+    }
+
+    &__title {
+        font-size: v.$h3-font-size;
+        margin-bottom: v.$mb-1-5;
+    }
+
+    &__subscribe {
+        background-color: v.$first-color-lighten;
+        padding: .75rem;
+        display: flex;
+        justify-content: space-between;
+        border-radius: .5rem;
+    }
+
+    &__input {
+        width: 70%;
+        padding: 0 .5rem;
+        background: none;
+        color: v.$text-color;
+        border:none;
+        outline: none;
+    }
+
+    &__button {
+        padding: 1rem;
+    }
+
+    &__data {
+        display: grid;
+        row-gap: .75rem;
+    }
+
+    &__information {
+        font-size: v.$small-font-size;
+    }
+
+    &__social {
+        display: inline-flex;
+        column-gap: .75rem;
+    }
+
+    &__social-link {
+        font-size: 1rem;
+        color: v.$text-color;
+        transition: ease-in-out .3s;
+
+        &:hover {
+            transform: translateY(-.25rem);
+        }
+    }
+
+    &__cards {
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+    }
+
+    &__card {
+        width: 35px;
+    }
+
+    &__copy {
+        text-align: center;
+        font-size: v.$small-font-size;
+        color: v.$text-color-light;
+        margin: 5rem 0 1rem;
+    }
+
+
+
+}

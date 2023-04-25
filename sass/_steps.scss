@@ -1,0 +1,48 @@
+@use 'variable' as v;
+
+.steps {
+    &__bg {
+       background-color: v.$first-color; 
+       padding: 3rem 2rem 2rem;
+       border-radius: 1rem;
+    }
+
+    &__container {
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    &__title {
+        color: #fff;
+    }
+
+    &__card {
+        background-color: v.$container-color;
+        padding: 2.5rem 3rem 2rem 1.5rem;
+        border-radius: 1rem;
+
+        &:hover &-number {
+            transform: translateY(-.25rem);
+        }
+    }
+
+    &__card-number {
+        display: inline-block;
+        background-color: v.$first-color-alt;
+        color: #fff;
+        padding: .5rem .75rem;
+        border-radius: .25rem;
+        font-size: v.$h2-font-size;
+        margin-bottom: v.$mb-1-5;
+        transition: ease-out .3s;
+    }
+
+    &__card-title {
+        font-size: v.$h3-font-size;
+        margin-bottom: v.$mb-0-5;
+    }
+
+    &__card-description {
+        font-size: v.$small-font-size;
+    }
+}

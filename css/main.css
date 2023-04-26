@@ -704,8 +704,8 @@ img {
 .scrollup {
   position: fixed;
   background-color: hsl(152, 24%, 32%);
-  right: 1rem;
   bottom: -30%;
+  right: 1rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -713,8 +713,8 @@ img {
   border-radius: 0.25rem;
   z-index: 10;
   opacity: 0.8;
-  -webkit-transition: ease-in-out 0.4s;
-  transition: ease-in-out 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .scrollup__icon {
   font-size: 1rem;
@@ -725,6 +725,7 @@ img {
   opacity: 1;
 }
 
+/* ====== show scroll up ====== */
 .show-scroll {
   bottom: 3rem;
 }

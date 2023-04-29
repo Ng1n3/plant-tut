@@ -24,6 +24,7 @@ body {
     margin: v.$header-height 0 0 0;
     background-color: v.$body-color;
     color: v.$text-color;
+    transition: .4s; //for darktheme animation
 }
 
 button {

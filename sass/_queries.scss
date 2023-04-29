@@ -1,0 +1,16 @@
+@use 'variable' as v;
+
+@media screen and (max-width: 320px) {
+    .container {
+        margin-left: v.$mb-1;
+        margin-right: v.$mb-1;
+    }
+
+    .home__img {
+       width: 180px; 
+    }
+
+    .home__title {
+        font-size: v.$h1-font-size;
+    }
+}

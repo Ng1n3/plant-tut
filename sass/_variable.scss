@@ -41,7 +41,7 @@
     $z-fixed: 100;
 
     body.dark-theme {
-        $first-color: hsl($hue, 8%, 20%);
+        $first-color-dark: hsl($hue, 8%, 20%);
         $title-color: hsl($hue, 4%, 95%);
         $text-color: hsl($hue, 4%, 75%);
         $body-color: hsl($hue, 8%, 12%);

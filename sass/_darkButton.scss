@@ -6,3 +6,18 @@
     cursor: pointer;
 
 }
+
+.dark-theme .steps__bg,
+.dark-theme .questions {
+background-color: v.$first-color-dark;
+
+}
+
+.dark-theme .product__circle,
+.dark-theme .footer__subscribe {
+    background-color: v.$container-color;
+}
+
+.dark-theme .scroll-header {
+    box-shadow: 0 1px 4px hsla(v.$hue, 4%, 4%, .3);
+}
